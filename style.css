@@ -1,0 +1,360 @@
+body {
+    background-color: #22223B;
+    color: #CDD3D5;
+}
+#loginlogo {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+}
+
+#loginlogo img {
+    height: 150px;
+}
+h1 {
+    font-size: 190%;
+    font-family: 'Source Serif Pro', serif;
+    text-align: center;
+    margin-top: 20%;
+}
+#slogan {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn1 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+  }
+  @keyframes fadeIn1 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+#mainPageButton {   
+    background-color: #22223B;   
+    width: 100%;  
+     color: #CDD3D5;   
+     padding: 15px;   
+     margin: 10px 0px;  
+     border-radius: 5px;   
+     cursor: pointer;  
+     align-items: center; 
+     font-family: 'Lora', serif;
+     font-size: 15px;
+     border-color: #CDD3D5;
+      }   
+form {   
+     width: 100%;
+     /*width: 50%;*/
+ }   
+/* input[type=text], input[type=password] {   
+     width: 50%;   
+    width: 100%;
+     margin: 5px;  
+     padding: 12px 20px;      
+     border: 2px solid green;   
+     box-sizing: border-box;   
+     border-radius: 5px;
+          
+ }*/
+button:hover {   
+     opacity: 0.7;   
+ }   
+       
+.firstForm {  
+    min-width: 250px;
+    width: 50%; 
+     padding: 10px;   
+     background-color: lightblue;  
+     display: block;
+     border-radius: 5px;
+     margin: auto;/*yall forgot to put the ;*/
+     /*margin: auto;
+     width: 50%; */
+ }
+
+ form p{
+     color: #4F5D75;
+     text-align: center;
+ }
+
+ .afterLoginPics {
+ height: 250px;
+ width: 270px;
+ margin: auto;
+ }
+
+ .testPrep {
+  font-family: 'Roboto Slab', serif;
+  text-align:center;
+  display:block;
+  background-color: transparent;
+  border: 1px solid transparent;
+  margin-right: 10px;
+  margin-bottom: 1px;
+  float:left;
+  font-size: 25px;
+}
+ 
+
+ .planner {
+  font-family: 'Roboto Slab', serif;
+  text-align:center;
+  display:block;
+  background-color: transparent;
+  border: 1px solid transparent;
+  margin-right: 10px;
+  margin-bottom: 1px;
+  float:left;
+  font-size: 25px;
+}
+
+#submitButton {
+    border-radius: 5px;
+}
+
+ 
+/*
+    __ {
+    background color:
+    font-size:
+    text-align: center
+}
+    can be used for most boxes, and may have to be adjusted accordingly.
+
+    __ {
+    border-height:
+    border-style: solid
+    background-color:
+    font-size:
+    text-align: center;
+}
+    specifically for the copyright banner on the home page
+*/
+
+.afterLogin {
+display: flex;
+  flex-direction: row;
+  justify-content: center;
+    height: 30px; 
+}
+
+#copyright {
+position: relative;
+bottom: 0;
+text-align: center;
+width: 99vw;
+font-family: 'Source Serif Pro', serif;
+
+
+
+  
+}
+
+.afterLoginPics {
+    margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+} 
+
+#loginPageButton {   
+    background-color: lightcoral;   
+    width: 10%;  
+     color: #0D0C1D;   
+     padding: 15px;   
+     margin: 10px ;  
+     border-radius: 5px;   
+     cursor: pointer;  
+     align-items: center; 
+     position:absolute; 
+     top:0; 
+     right:0;
+     border-color: #CDD3D5;
+     font-family: 'Lora', serif;
+     font-size: 15px;
+     display: table-cell;
+    vertical-align: right;
+      }  
+ a.middle
+      {
+          position: relative;
+          text-decoration: none;
+          color: #CDD3D5;
+      }
+      
+a.middle:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #FFF;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out;
+      }
+a.middle:hover:before {
+        visibility: visible;
+        transform: scaleX(1);
+      }
+#testPrepHeader {
+    font-family: 'Bree Serif', serif;
+
+    vertical-align: middle;    
+}
+
+#testPrepTop {
+    display: table;
+}
+
+#testPrepText, form {
+    display: inline
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+    font-style: italic;
+ }
+
+@media only screen and (min-width: /*320*/280px) and (max-width: 479px) {
+    .testPrep {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #copyright {
+        position: relative;
+        bottom: 0;
+        text-align: center;
+        width: 99vw;
+        font-family: 'Source Serif Pro', serif;
+    }
+    #testPrepHeader {
+        font-family: 'Bree Serif', serif;
+
+        vertical-align: middle;
+    }
+    #loginPageButton {
+        min-width: fit-content;
+        min-height: fit-content;
+    }
+    #loginlogo img {
+        height: 60px;
+    }
+/*
+    #logo {
+        width: 40%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        display: none;
+    }
+    #logo2 {
+        width: 10%;
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        display: none;
+    }
+*/
+/*    #videoContainer {
+        position: relative;
+        padding-bottom: 56.25%;  16:9 
+        height: 0;
+    }
+    #videoContainer iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+*/
+}
+
+/*@media only screen and (min-width: 1024px) and (max-width: 1300px) {
+    #copyright {
+        position: relative;
+        bottom: 0;
+        text-align: center;
+        width: 99vw;
+        font-family: 'Source Serif Pro', serif;
+    }
+}
+*/
+#testPrepText {
+    font-family: 'Source Serif Pro', serif;
+}
+/*
+#logo img{
+    height: 100px;
+}
+
+#logo {
+    width: 99vw;
+    text-align: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    
+}
+*/
+
+#creators {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-style: italic;
+}
+#factOTD {
+    font-size: 15px;
+    margin: 10px;
+}
+
+#factOTD p{
+    font-family: 'Baloo Tamma 2', cursive;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: whitesmoke; }
+  }
+/*
+#logo2 {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+#logo2 img{
+    height: 100px;
+}
+*/

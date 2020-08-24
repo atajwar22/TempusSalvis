@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src = "script.js" defer></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="271256308933-bo56bnh1a7b4kavd82ckrvo79v7ek5lm.apps.googleusercontent.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="loginlogo">
+        <img src="images/Logo.png">
+    </div>
+    <h1>Tempus Salvis</h1>
+    <p id="slogan">Time is of the essence.</p>
+    <br>
+    <br>
+    <form class="firstForm">  
+        <div class="container">   
+            <button id ="mainPageButton">Main Page</button>
+        </div>
+        <div class="signs">
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            <a href="#" class="signOut" onclick="onSignOut();">Sign out</a>
+        </div>
+    </form>
+    <br>
+    <p id="creators">Created by Anthony Lopez, Ahanaf Tajwar, Jaime Gonzalez & Nigel Asiamah</p>
+
+    <div id="copyright">
+        <h3>© 2020 JANUS INC.</h3>
+    </div>
+</body>
+
+</html>

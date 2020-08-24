@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAoheVLUOA78vbcVF3nYhbvV8JhlZllRpA",
+        authDomain: "final-35855.firebaseapp.com",
+        databaseURL: "https://final-35855.firebaseio.com",
+        projectId: "final-35855",
+        storageBucket: "final-35855.appspot.com",
+        messagingSenderId: "10552074689",
+        appId: "1:10552074689:web:ef3a61e09726b4b17d0f40",
+        measurementId: "G-15PG8GF90J"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src = "script2.js" defer></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="271256308933-bo56bnh1a7b4kavd82ckrvo79v7ek5lm.apps.googleusercontent.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+<body class="tpBody">
+<div id="testPrepTop">
+    <h1 id="testPrepHeader">Test Prep</h1>
+    <a href ="afterLogin.html"><button id="loginPageButton">Main Page</button></a>
+</div>
+    <br>
+    <br>
+    <br>
+    <p id="testPrepText"> 
+       <!-- <select name="YourGrade" id="grades">
+        <option value="Your Grade">Your Grade</option>
+        <option value="Pre-K/ K">Pre-K/ K</option>
+        <option value="1st Grade">1st Grade</option>
+        <option value="2nd Grade">2nd Grade</option>
+        <option value="3rd Grade">3rd Grade</option>
+        <option value="4th Grade">4th Grade</option>
+        <option value="5th Grade">5th Grade</option>
+        <option value="6th Grade">6th Grade</option>
+        <option value="7th Grade">7th Grade</option> 
+        <option value="8th Grade">8th Grade</option>
+        <option value="9th Grade">9th Grade</option>
+        <option value="10th Grade">10th Grade</option>
+        <option value="11th Grade">11th Grade</option>
+        <option value="12th Grade">12th Grade</option>
+        <option value="College">College</option> 
+      </select> -->
+      I have a test on 
+      <form>
+        <input id="testSubject" type="text" placeholder="i.e. Biology">
+      </form>
+        <p id="testPrepText"> and my test topic is </p> 
+      <form>
+        <input id="testTopic" type="text" placeholder="i.e. Cell Cycle">
+      </form>
+    .
+    <button id="submitButton">Submit</button>
+    <div class="allMessages"></div>
+    </p>
+    <!-- <iframe id="player" type="text/html" width="640" height="390"></iframe> -->
+    <div id="videoContainer">
+
+    </div>
+    <br>
+    <br>
+    <br>
+  <!--  <div id="logo">
+        <img src="images/Logo.png">
+        </div>
+      -->    
+</body>
+</html>
